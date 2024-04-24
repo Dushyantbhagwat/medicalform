@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Records UI</title>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Medical Records UI</h1>
+    <div class="button-container">
+      <a href="{% url 'patient' %}" class="button">Patient</a>
+      <a href="{% url 'doctor' %}" class="button">Doctor</a>
+      <a href="{% url 'appointment' %}" class="button">Appointment</a>
+    </div>
+  </div>
+</body>
+</html>
