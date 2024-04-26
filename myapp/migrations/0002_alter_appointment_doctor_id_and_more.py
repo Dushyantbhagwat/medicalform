@@ -13,11 +13,12 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='appointment',
             name='DOCTOR_ID',
-            field=models.BigIntegerField(),
+            field=models.CharField(max_length=100),
+
         ),
         migrations.AlterField(
             model_name='appointment',
             name='PATIENT_ID',
-            field=models.BigIntegerField(),
+            field=models.CharField(max_length=100),
         ),
     ]

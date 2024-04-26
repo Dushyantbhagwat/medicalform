@@ -42,8 +42,8 @@ class Migration(migrations.Migration):
                 ('APPOINTMENT_ID', models.AutoField(primary_key=True, serialize=False)),
                 ('APPOINTMENT_DATE', models.DateField()),
                 ('APPOINTMENT_STATUS', models.CharField(max_length=100)),
-                ('DOCTOR_ID', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='myapp.doctor')),
-                ('PATIENT_ID', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='myapp.patient')),
+                ('DOCTOR_ID', models.CharField(max_length=100)),
+                ('PATIENT_ID', models.CharField(max_length=100)),
             ],
         ),
     ]

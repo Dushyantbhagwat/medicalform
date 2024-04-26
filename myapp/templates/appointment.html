@@ -103,11 +103,11 @@ body {
     <form class="form" action="{% url 'appointment'%}" method="post">
       {% csrf_token %}
       <div class="form-group">
-        <label for="patientID">Patient ID:</label>
+        <label for="patientID">Patient Name:</label>
         <input type="text" id="patientID" name="patientID" placeholder="Enter patient ID" required>
       </div>
       <div class="form-group">
-        <label for="doctorID">Doctor ID:</label>
+        <label for="doctorID">Doctor Name:</label>
         <input type="text" id="doctorID" name="doctorID" placeholder="Enter doctor ID" required>
       </div>
       <div class="form-group">

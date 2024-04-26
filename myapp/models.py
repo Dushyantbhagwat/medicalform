@@ -31,8 +31,8 @@ class Doctor(models.Model):
 
 class Appointment(models.Model):
     APPOINTMENT_ID = models.AutoField(primary_key=True)
-    PATIENT_ID = models.BigIntegerField()
-    DOCTOR_ID = models.BigIntegerField()
+    PATIENT_ID = models.CharField(max_length=100)
+    DOCTOR_ID = models.CharField(max_length=100)
     APPOINTMENT_DATE = models.DateField()
     APPOINTMENT_STATUS = models.CharField(max_length=100)
 
